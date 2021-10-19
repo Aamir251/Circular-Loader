@@ -1,0 +1,30 @@
+body {
+background : black;
+color: white;
+display:flex;
+flex-direction:column;
+justify-content: center;
+align-items:center;
+
+}
+.container {
+  position: relative;
+  margin-top: 15px;
+  stroke-dasharray: 285px;
+  stroke-dashoffset: 0px;
+}
+.animate-svg {
+  animation: animate 3s ease-in-out
+
+}
+
+.container div {
+  position: absolute;
+  top: 40px;
+  left: 35px;
+
+}
+@keyframes animate {
+  from {stroke-dashoffset: 285px}
+  to {stroke-dashoffset: 0}
+}
